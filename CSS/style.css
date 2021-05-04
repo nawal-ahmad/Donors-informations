@@ -31,11 +31,12 @@ header h1{
   clear: both;
   color: #eee;
   text-align: center;
+  height: max-content;
 }
 
 
 #form {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: larger;
   width: 100%;
   color:#eee;
@@ -44,9 +45,10 @@ header h1{
   margin: 5% 0;
   margin-left: 2%;
   background-color: rgba(96, 96, 96,.8);
-  padding: 30px;
   border-radius: 7px;
   position: relative;
+  padding: 40px;
+  padding-bottom: 100px;
 }
 
 #table{
@@ -82,13 +84,16 @@ th,td{
 
 input, select{
   width:300px;
-  height: 20px;
+  height: 35px;
   text-align: center;
   position: absolute;
   right: 30px;
+
 }
 
 #submit{
   color: white;
   background-color: #333;
+  font-size: 15px;
+  padding: 10px;
 }
