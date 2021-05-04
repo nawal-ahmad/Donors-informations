@@ -70,23 +70,22 @@ function saveLS() {
 function getLS() {
   let donors = JSON.parse(localStorage.getItem('donors'))
   if (donors) {
-    table.innerHTML=''
+    
     for (let i = 0; i < donors.length; i++) {
       let reInst = new Donor(donors[i].name, donors[i].amount)
       reInst.getAge();
       reInst.render();
       total = total + donors[i].amount
-      tableFooter();
+      console.log(total)
     }
   }
 }
 getLS();
 
-function tableFooter(){
-  let tablefooter = document.createElement('tr')
-  table.appendChild(tablefooter)
-  let totalLabel = document.createElement('td')
-  tablefooter.appendChild(totalLabel)
-  
-  totalLabel.textContent = 'Total: ' + total
-}
+// function tableFooter(){
+//   let tablefooter = document.createElement('tr')
+//   table.appendChild(tablefooter)
+//   let totalLabel = document.createElement('td')
+//   tablefooter.appendChild(totalLabel)
+//   totalLabel.textContent = 'Total: ' + total
+// }
